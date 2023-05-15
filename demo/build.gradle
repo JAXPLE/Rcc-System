@@ -1,0 +1,52 @@
+plugins {
+	id 'java'
+	id 'war'
+	id 'org.springframework.boot' version '2.7.12-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+// https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.69'
+// https://mvnrepository.com/artifact/javax.servlet/jstl
+	implementation 'javax.servlet:jstl:1.2'
+// https://mvnrepository.com/artifact/taglibs/standard
+	implementation 'taglibs:standard:1.1.2'
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java 
+// /디비 연결하는 용도
+	implementation 'mysql:mysql-connector-java:8.0.28'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa 
+//이건 DTO랬음(JPA)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.5'
+
+	//jsp 사용을 위해 의존성 추가
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

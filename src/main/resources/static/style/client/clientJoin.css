@@ -1,0 +1,94 @@
+.container {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+    top: 60%;
+    left: 50%;
+
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.container input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.container input[type="button"]:hover {
+    background-color: #28E6DD;
+}
+
+.container #duplication,
+.container #addressSearch {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left : 220px;
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    width : 80px;
+}
+.container #phoneChk,
+.container #phoneChk2{
+    display: inline-block;
+    margin-bottom: 15px;
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    width : 150px;
+}
+
+.container #duplication:hover,
+.container #addressSearch:hover {
+    background-color: #28E6DD;
+}
+
+.container #zonecode,
+.container #address {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.container #detailAdress {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,16 @@
+.footer{
+    text-align: center;
+    background-color: #28E6DD;
+}
+p{
+    font-size : 0.2em;
+}
+
+#footerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ece6e6;
+}

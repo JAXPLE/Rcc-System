@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.section1{
+    width: 800px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #28E6DD;
+    text-align:center;
+}
+.section2{
+    width: 600px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #28E6DD;
+    text-align:center;
+}
+.container{
+    display: flex;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #28E6DD;
+    width : 100px;
+    text-align : center;
+}
+
+th {
+    font-weight: bold;
+    text-align : center;
+}
+#orderCode{
+    background : #fff;
+    border : none;
+}
+.but{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.vutton{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+#pageIndexBtn{
+    margin: 1%;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius:2px;
+    text-align: center;
+    padding: 1px;
+    color:gray;
+}
+
+#pageIndexBtn:hover{
+    color: #1ba7a1;
+}
+
+

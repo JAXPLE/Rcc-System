@@ -1,0 +1,119 @@
+/* 공통 스타일 */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input {
+    border: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 게시글 스타일 */
+#boardDetailPrint {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#boardDetailPrint th,
+#boardDetailPrint td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#commentPrint {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#commentPrint th,
+#commentPrint td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 댓글 스타일 */
+.comment-info {
+    display: flex;
+    align-items: center;
+}
+
+.comment-info input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+textarea#comment {
+    border: none;
+    margin: 10px 0;
+    padding: 5px;
+    width: 685px;
+    height: 43px;
+}
+
+#editButton button {
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#editButton button:hover {
+    background-color: #1ba7a1;
+}
+
+/* 작성하기 버튼 스타일 */
+#button-writer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28E6DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    width: 695px;
+}
+
+#button-writer:hover {
+    background-color: #1ba7a1;
+}

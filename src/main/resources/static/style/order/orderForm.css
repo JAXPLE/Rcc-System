@@ -1,0 +1,146 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #28E6DD;
+    width: 60%;
+    margin: 1em auto;
+}
+
+#add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+}
+
+/*#add > div {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: #28E6DD;*/
+/*    border-radius: 5px;*/
+/*    padding: 0.5em;*/
+/*    margin-top: 1em;*/
+
+/*}*/
+/*#add {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    margin: 1em 0;*/
+/*}*/
+
+#add > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;;
+    align-items: center;
+    background-color: #28E6DD;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+#add > div > input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    width: 7em;
+    margin: 0 0.5em;
+}
+
+#add > div > input[type="button"] {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 0.5em;
+}
+
+#add > div > input[type="button"]:hover {
+    background-color: #00bfa5;
+    color: white;
+}
+
+#add > div > input[type="button"].deleteButton {
+    color: rebeccapurple;
+}
+
+#add > div > input[type="button"].deleteButton:hover {
+    color: white;
+    background-color: firebrick;
+}
+
+#add > div > input[type="text"]:focus {
+    outline: none;
+}
+
+.minusButton, .plusButton, .deleteButton {
+    background-color: #28E6DD;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0 0.5em;
+}
+
+.minusButton:hover, .plusButton:hover {
+    background-color: #00bfa5;
+}
+
+.minusButton:hover, .plusButton:hover, .deleteButton:hover {
+    background-color: #fff;
+    color: #28E6DD;
+}
+
+.minusButton:before {
+    content: "-";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.plusButton:after {
+    content: "+";
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#priceList {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.addButton {
+    margin-top: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitButton {
+    margin-top: 1em;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: green;
+}.submitButton:hover {
+     background-color: #0d47a1;
+
+    background-color: #4CAF50;
+ }
